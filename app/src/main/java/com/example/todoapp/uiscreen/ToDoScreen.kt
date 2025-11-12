@@ -23,7 +23,7 @@ fun TodoScreen(viewModel: ToDoViewModel = viewModel()) {
     var searchQuery by rememberSaveable { mutableStateOf("") }
     var filterOption by rememberSaveable { mutableStateOf("Semua") }
 
-    // 🔍 Filter berdasarkan pencarian dan status
+
     val filteredTodos = todos
         .filter { it.title.contains(searchQuery, ignoreCase = true) }
         .filter {
