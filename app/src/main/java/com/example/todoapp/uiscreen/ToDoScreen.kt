@@ -47,7 +47,7 @@ fun TodoScreen(viewModel: ToDoViewModel = viewModel()) {
                 .padding(padding)
                 .padding(16.dp)
         ) {
-            // ✏ Input tambah tugas
+
             OutlinedTextField(
                 value = newTask,
                 onValueChange = { newTask = it },
